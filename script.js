@@ -53,7 +53,7 @@ function move(element, player, color) {
                 // alert("TIE");
 
                 $(".tie").remove();
-                $(".main").css("background", "background:linear-gradient(#aebbf7, #15bbbb, #ffeee6)");
+                $(".main").css("background", "linear-gradient(#aebbf7, #15bbbb, #ffeee6)");
 
                 back_to_original();
             }, 2000);
@@ -78,7 +78,7 @@ function move(element, player, color) {
                 // alert("TIE");
 
                 $(".lose").remove();
-                $(".main").css("background", "background:linear-gradient(#aebbf7, #15bbbb, #ffeee6)");
+                $(".main").css("background", "linear-gradient(#aebbf7, #15bbbb, #ffeee6)");
 
                 back_to_original();
             }, 2000);
@@ -108,8 +108,7 @@ function back_to_original() {
   for(var i=0;i<9;i++){
     document.getElementById(i).innerHTML = "";
   }
-  $("td").css("background-color", "background:linear-gradient(#aebbf7, #15bbbb, #ffeee6)");
-  
+  $("td").css("background-color", "transparent");  
 }
 
 function minimax(board2, player) {
